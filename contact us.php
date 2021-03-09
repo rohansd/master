@@ -16,13 +16,15 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Star Bucks</a>
+            <a class="navbar-brand" href="#">Kopi Luwak</a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class=""><a href="index.html">Home</a></li>
-            <li> <a href="order online.html">Order online</a></li>
-            <li class="active"><a href="contact us.html">Contact us</a></li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order online.html">Order online</a></li>
+            <li><a href="contact us.php">Contact us</a></li>
             <li> <a href="locate.html">Locate us</a></li>
+            <li style="float:right"><a>Sign in</a></li>
+            <li style="float:right"><a>Join now</a></li>
         </ul>
       </div>
     </nav>
@@ -51,32 +53,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <form>
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label>Message:</label>
-                        <div>
-                            <textarea></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Remember me:</label>
-                        <div>
-                            <input type="checkbox" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="button" value="send message" />
-                    </div>
-            </div>
+            <h1>Contacts</h1>
+            <div>
+                <?php
+                     //open up the contact file
+                     $fp = fopen("contacts.txt", "r") or die("error");
+                     //print a line at a time
+                     while (!feof($fp)){
+                      $line = fgets($fp);
+                      print "$line <br />";
+                        }
+                        //close the file
+                        fclose($fp);
+                ?>
             <div class="col-md-12">
                 <h3>Get in touch ! we'd love to hear from you.</h3>
                 <br>
