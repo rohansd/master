@@ -9,22 +9,23 @@
     <link rel="icon" href="img\logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
     <link rel="stylesheet" href="css\style2.css" />
+    <link rel="stylesheet" href="css\style.css" />
 </head>
 
 <body>
-<!-- START-->
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Kopi Luwak</a>
         </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order online.html">Order online</a></li>
-            <li><a href="contact us.php">Contact us</a></li>
+            <li class=""><a href="index.html">Home</a></li>
+            <li> <a href="order online.html">Order online</a></li>
+            <li class="active"><a href="contact us.php">Contact us</a></li>
             <li> <a href="locate.html">Locate us</a></li>
-            <li style="float:right"><a>Sign in</a></li>
-            <li style="float:right"><a>Join now</a></li>
+            <li style="float:right"><a href="SignIn.html">Sign in</a></li>
+            <li style="float:right"> <a>Join now</a></li>
         </ul>
       </div>
     </nav>
